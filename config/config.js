@@ -96,12 +96,13 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "News",
-						url: "http://www.hani.co.kr/rss/"
+						title: "jtbc",
+						url: "http://fs.jtbc.joins.com/RSS/newsflash.xml"
 					}
 				],
 				showSourceTitle: true,
-				showPublishDate: true
+				showPublishDate: true,
+				updateInterval: 3000
 			}
 		},
 	]
