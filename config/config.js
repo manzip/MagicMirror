@@ -20,7 +20,7 @@ var config = {
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 	                                                       // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
-
+	zoom: 0.5,
 	language: "en",
 	timeFormat: 24,
 	units: "metric",
@@ -35,17 +35,18 @@ var config = {
 		},
 		{
 			module: "clock",
-			position: "top_left"
+			position: "top_left",
+			timezone: "Etc/GMT+9"
 		},
 		{
 			module: "calendar",
-			header: "US Holidays",
+			header: "South Korea Holidays",
 			position: "top_left",
 			config: {
 				calendars: [
 					{
 						symbol: "calendar-check-o ",
-						url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+						url: "https://www.calendarlabs.com/ical-calendar/ics/69/South_Korea_Holidays.ics"
 					}
 				]
 			}
@@ -58,9 +59,9 @@ var config = {
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "New York",
-				locationID: "",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Seoul",
+				locationID: "1835848",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "860806a4ce4c3401b70f97d34f99d7ea"
 			}
 		},
 		{
@@ -68,9 +69,9 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "New York",
-				locationID: "5128581",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "YOUR_OPENWEATHER_API_KEY"
+				location: "Seoul",
+				locationID: "1835848",  //ID from http://www.openweathermap.org/help/city_list.txt
+				appid: "860806a4ce4c3401b70f97d34f99d7ea"
 			}
 		},
 		{
@@ -79,8 +80,8 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						title: "News",
+						url: "http://www.hani.co.kr/rss/"
 					}
 				],
 				showSourceTitle: true,
