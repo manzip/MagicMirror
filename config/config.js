@@ -20,7 +20,7 @@ var config = {
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 	                                                       // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
-	zoom: 0.8,
+	zoom: 0.7,
 	language: "en",
 	timeFormat: 24,
 	units: "metric",
@@ -53,13 +53,29 @@ var config = {
 		},
 		{
 			module: "compliments",
-			position: "lower_third"
+			position: "top_right",
+			config: {
+				compliments: {
+					anytime: [
+						"안녕하세요?~"
+					],
+					morning: [
+						"좋은 아침이에요!",
+					],
+					afternoon: [
+						"식사는 하셨어요?",
+					],
+					evening: [
+						"굿 나잇~"
+					]
+				}
+			}
 		},
 		{
 			module: "currentweather",
 			position: "top_right",
 			config: {
-				location: "Seoul",
+				location: "",
 				locationID: "1835848",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "860806a4ce4c3401b70f97d34f99d7ea"
 			}
@@ -69,7 +85,7 @@ var config = {
 			position: "top_right",
 			header: "Weather Forecast",
 			config: {
-				location: "Seoul",
+				location: "",
 				locationID: "1835848",  //ID from http://www.openweathermap.org/help/city_list.txt
 				appid: "860806a4ce4c3401b70f97d34f99d7ea"
 			}
