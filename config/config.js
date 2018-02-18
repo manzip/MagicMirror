@@ -36,7 +36,7 @@ var config = {
 		{
 			module: "clock",
 			position: "top_left",
-			timezone: "Asia/Seoul"
+			timezone: "Etc/GMT+9"
 		},
 		{
 			module: "calendar",
