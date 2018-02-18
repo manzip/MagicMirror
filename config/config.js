@@ -20,7 +20,7 @@ var config = {
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
 	                                                       // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
 	                                                       // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.3.0/28"],
-	zoom: 0.5,
+	zoom: 0.8,
 	language: "en",
 	timeFormat: 24,
 	units: "metric",
@@ -36,7 +36,7 @@ var config = {
 		{
 			module: "clock",
 			position: "top_left",
-			timezone: "Etc/GMT+9"
+			timezone: "Asia/Seoul"
 		},
 		{
 			module: "calendar",
