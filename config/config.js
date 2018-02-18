@@ -77,7 +77,8 @@ var config = {
 			config: {
 				location: "",
 				locationID: "1835848",  //ID from http://www.openweathermap.org/help/city_list.txt
-				appid: "860806a4ce4c3401b70f97d34f99d7ea"
+				appid: "860806a4ce4c3401b70f97d34f99d7ea",
+				onlyTemp: true
 			}
 		},
 		{
